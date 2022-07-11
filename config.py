@@ -9,8 +9,8 @@ if os.path.exists("local.env"):
 
 load_dotenv()
 admins = {}
-SESSION_NAME = getenv("AgBSsBAbPyipBpVTU2OtOEH45BXyrcduUFz6IOoXoGR1z4oiS9wRL-O3OJ633EDFtH2-6IsYN1MDogSxcaxc8o_diWz_Z0eoN_0VHnFzEXEKA5lpxEVrhuwlrKjPxZPuY7Y_XRCFPsabcfyrmKzosUofjSkzJJshny8Bi2wvkZ4xq_rAO46VEKdVoJCDlw3lFY2xVQ367baS9cqc-nQDMQotOq6xR5PZO6x12nGvLKinqeYIHv6hY5w4H-Es7vflVKawJQFIFZRQ86RpvijTqaP4fkaBsaH8jJVvMn9HjHU-VM0b6OnNFJ7ub1K-viv-jxSMZouFIK4Ft-ZyP-NBB4KNAAAAATPlyNUA", "")
-BOT_TOKEN = getenv("5455184404:AAF9eVPQE0S5YMufEA0h7Z7vB54bxh9wjaA", "")
+SESSION_NAME = getenv("SESSION_NAME", "AgBSsBAbPyipBpVTU2OtOEH45BXyrcduUFz6IOoXoGR1z4oiS9wRL-O3OJ633EDFtH2-6IsYN1MDogSxcaxc8o_diWz_Z0eoN_0VHnFzEXEKA5lpxEVrhuwlrKjPxZPuY7Y_XRCFPsabcfyrmKzosUofjSkzJJshny8Bi2wvkZ4xq_rAO46VEKdVoJCDlw3lFY2xVQ367baS9cqc-nQDMQotOq6xR5PZO6x12nGvLKinqeYIHv6hY5w4H-Es7vflVKawJQFIFZRQ86RpvijTqaP4fkaBsaH8jJVvMn9HjHU-VM0b6OnNFJ7ub1K-viv-jxSMZouFIK4Ft-ZyP-NBB4KNAAAAATPlyNUA")
+BOT_TOKEN = getenv("BOT_TOKEN", "5455184404:AAF9eVPQE0S5YMufEA0h7Z7vB54bxh9wjaA")
 BOT_NAME = getenv("BOT_NAME", "🎧 𝗝𝗢𝗭 𝗠𝗨𝗦𝗜𝗖 🎧")
 API_ID = int(getenv("API_ID", "13923299"))
 API_HASH = getenv("API_HASH", "500ff182245a31f3f941ffa2bc81192f")
@@ -23,7 +23,7 @@ ASSISTANT_NAME = getenv("ASSISTANT_NAME", "🎧 ＪＯＳＥＦ 🎧")
 GROUP_SUPPORT = getenv("GROUP_SUPPORT", "")
 UPDATES_CHANNEL = getenv("UPDATES_CHANNEL", "https://t.me/zho_josefo")
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
-HEROKU_API_KEY = getenv("UPDATES_CHANNEL", "HEROKU_API_KEY")
+HEROKU_API_KEY = getenv("UPDATES_CHANNEL", "HEROKU_API_KEY"
 SUDO_USERS = list(map(int, getenv("SUDO_USERS", "399401433 2090788121").split()))
 COMMAND_PREFIXES = list(getenv("COMMAND_PREFIXES", "/ ! .").split())
 ALIVE_IMG = getenv("ALIVE_IMG", "https://te.legra.ph/file/407ce4c57a645c11f65c0.jpg")
